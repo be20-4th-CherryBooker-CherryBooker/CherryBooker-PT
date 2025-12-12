@@ -22,22 +22,24 @@ data:
   SPRING_SECURITY_OAUTH2_CLIENT_REGISTRATION_GOOGLE_REDIRECT_URI: http://localhost:8080/login/oauth2/code/google
   SPRING_SECURITY_OAUTH2_CLIENT_REGISTRATION_GOOGLE_SCOPE: profile,email
   SPRING_SECURITY_OAUTH2_CLIENT_REGISTRATION_GOOGLE_AUTHORIZATION_GRANT_TYPE: authorization_code
+  OCR_BASE_URL: http://cherrybooker-ocr:8000/ocr
 ---
 apiVersion: v1
-kind: Secret
+kind: PersistentVolume
 metadata:
-  name: backend-secrets
+  name: backend-uploads-pv
   labels:
     app: cherrybooker-backend
-type: Opaque
-stringData:
-  SPRING_DATASOURCE_USERNAME: penrose
-  SPRING_DATASOURCE_PASSWORD: valen777
-  JWT_SECRET: XN5O5LI97d5qXryKAu5OrnJfAeNYNczeN4X3gGnH2i0=
-  SPRING_SECURITY_OAUTH2_CLIENT_REGISTRATION_KAKAO_CLIENT_ID: dummy-kakao-client-id
-  SPRING_SECURITY_OAUTH2_CLIENT_REGISTRATION_KAKAO_CLIENT_SECRET: dummy-kakao-client-secret
-  SPRING_SECURITY_OAUTH2_CLIENT_REGISTRATION_GOOGLE_CLIENT_ID: dummy-google-client-id
-  SPRING_SECURITY_OAUTH2_CLIENT_REGISTRATION_GOOGLE_CLIENT_SECRET: dummy-google-client-secret
+spec:
+  capacity:
+    storage: 5Gi
+  accessModes:
+    - ReadWriteMany
+  persistentVolumeReclaimPolicy: Retain
+  storageClassName: cherrybooker-shared
+  hostPath:
+    path: /data/cherrybooker/uploads
+    type: DirectoryOrCreate
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -101,7 +103,9 @@ metadata:
     app: cherrybooker-backend
 spec:
   accessModes:
-    - ReadWriteOnce
+    - ReadWriteMany
+  storageClassName: cherrybooker-shared
+  volumeName: backend-uploads-pv
   resources:
     requests:
       storage: 5Gi
