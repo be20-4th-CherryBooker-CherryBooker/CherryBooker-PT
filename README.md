@@ -18,6 +18,7 @@ docker build -f nginx/Dockerfile -t cherrybooker-nginx:dev .
 
 ### How to manage the cluseter?
 - Install minikube, the lightweight cluster mangaement service
+- enter minikube start.
 - Then, do the following.
 ``` console
 minikube image load cherrybooker-mariadb
