@@ -9,6 +9,7 @@ git submodule update --remote --recursive
 ```
 
 ### How to start building Docker images
+- Docker build for Vue frontend is included in nginx/Dockerfile
 ``` console
 docker build -t cherrybooker-mariadb mariadb
 docker build -t cherrybooker-backend:dev backend
