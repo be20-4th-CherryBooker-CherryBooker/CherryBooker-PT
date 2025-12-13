@@ -66,7 +66,7 @@ minikube addons enable metrics-server
 ``` console
 kubectl get pods -A
 ```
-if crahloop occurs, check
+if any crashloop occurs, check
 ``` console
 kubectl describe pod {docker container name}
 ```
