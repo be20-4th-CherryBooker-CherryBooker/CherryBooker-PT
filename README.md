@@ -139,9 +139,9 @@ OCR 기술을 통해 텍스트가 자동으로 추출·저장되며,
 <details> 
 	<summary><b>🚨 신고</b></summary> 
 	<h4>신고처리</h4>
-	<img src="![신고처리](https://github.com/user-attachments/assets/a05f220c-5946-44c1-a63d-933a78d77d9b)" width="80%"/>
-	<h4>신고목록및 필터링</h4>
-	<img src="" ![신고목록필터링](https://github.com/user-attachments/assets/30f1f60e-4cbb-48e0-8f48-7a10a9d51c07)" width="80%"/>
+	<img src= "![신고처리](https://github.com/user-attachments/assets/a5e37a2a-4edf-40ec-8608-d41fc8eee749)" width="80%"/>
+	<h4>신고처리 목록 필터링</h4>
+	<img src="![신고목록필터링](https://github.com/user-attachments/assets/f2574003-9a04-4003-a2d6-4b39e913139b)" width="80%"/>
 </details>
 
 ---
