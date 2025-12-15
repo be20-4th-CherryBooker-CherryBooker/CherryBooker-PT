@@ -132,8 +132,8 @@ OCR 기술을 통해 텍스트가 자동으로 추출·저장되며,
 ## 🛜 프로젝트 아키텍처
 <img width="770" height="600" alt="image" src="https://github.com/user-attachments/assets/11abac75-ddcf-47f7-9592-0802a5333db0" />
 
-
-
+### 🐋 Kubernetes manifest
+링크: 본 repository의 k8s 확인
 
 ## 🐋 Docker 및 Kubernetes 시연
 ![kubernetes_docker](https://github.com/user-attachments/assets/0c9c8804-769d-42ff-8fde-ba16740dfaa9)
