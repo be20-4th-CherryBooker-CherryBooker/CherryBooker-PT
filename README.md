@@ -6,6 +6,7 @@
 
 📟 REST API 명세서
 https://www.notion.so/2be341a375a5808da53cec8caa0995df?v=2be341a375a5805f8234000c08252a4a
+http://localhost:8080/swagger-ui/index.html
 
 🗃️ DB 모델링
 ERD 작성
