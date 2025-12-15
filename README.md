@@ -1,5 +1,6 @@
 ### Basic SW Arhitecture for this project
-<img width="779" height="538" alt="image" src="https://github.com/user-attachments/assets/3dc2bf1e-eb8e-485c-9015-cecadc59a4fb" />
+<img width="754" height="533" alt="image" src="https://github.com/user-attachments/assets/d2708d20-34e1-442a-8135-f691ddd4208b" />
+
 
 
 
