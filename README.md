@@ -96,35 +96,52 @@ OCR 기술을 통해 텍스트가 자동으로 추출·저장되며,
 
 <details> 
     <summary><b>💬 글귀 스레드</b></summary>
-    
+	<h4>스레드 목록 조회</h4>
+	<img src="./product/gif/스레드목록조회.gif" width="80%"/>
+	<h4>스레드 등록</h4>
+	<img src="./product/gif/스레드등록.gif" width="80%"/>
+	<h4>스레드 상세 조회</h4>
+	<img src="./product/gif/스레드상세조회.gif" width="80%"/>
+	<h4>스레드 답글 등록</h4>
+	<img src="./product/gif/스레드답글등록.gif" width="80%"/>
+	<h4>스레드 답글 수정</h4>
+	<img src="./product/gif/스레드답글수정.gif" width="80%"/>
+	<h4>스레드 답글 삭제</h4>
+	<img src="./product/gif/스레드답글삭제.gif" width="80%"/>
+	<h4>스레드 삭제</h4>
+	<img src="./product/gif/스레드삭제.gif" width="80%"/>
 </details>
 
 <details> 
 	<summary><b>🔔 알림</b></summary> 
 	<h4>알림 템플릿 목록 조회</h4>
-	<img src="./ad-hell-client/product/gif/알림발송목록조회.png" width="80%"/>
+	<img src="./product/gif/알림템플릿목록조회.gif" width="80%"/>
 	<h4>알림 템플릿 검색</h4>
-	<img src="./ad-hell-client/product/gif/알림템플릿검색.gif" width="80%"/>
+	<img src="./product/gif/알림템플릿검색.gif" width="80%"/>
+	<h4>알림 템플릿 상세 조회</h4>
+	<img src="./product/gif/알림템플릿상세조회.gif" width="80%"/>
 	<h4>알림 템플릿 등록</h4>
-	<img src="./ad-hell-client/product/gif/알림템플릿등록.gif" width="80%"/>
+	<img src="./product/gif/알림템플릿등록.gif" width="80%"/>
 	<h4>알림 템플릿 수정</h4>
-	<img src="./ad-hell-client/product/gif/알림템플릿수정.gif" width="80%"/>
+	<img src="./product/gif/알림템플릿수정.gif" width="80%"/>
 	<h4>알림 템플릿 삭제</h4>
-	<img src="./ad-hell-client/product/gif/알림템플릿삭제.gif" width="80%"/>
-	<h4>알림 발송 목록 조회</h4>
-	<img src="./ad-hell-client/product/gif/알림발송목록조회.png" width="80%"/>
-	<h4>발송 알림 검색</h4>
-	<img src="./ad-hell-client/product/gif/발송알림검색.gif" width="80%"/>
-	<h4>즉시 알림 발송</h4>
-	<img src="./ad-hell-client/product/gif/즉시알림발송.gif" width="80%"/>
-	<h4>푸시 알림 발송</h4>
-	<img src="./ad-hell-client/product/gif/푸시알림발송.gif" width="80%"/>
-	<h4>이벤트 알림 발송</h4>
-	<img src="./ad-hell-client/product/gif/이벤트알림발송.gif" width="80%"/>
-	<h4>예약 알림 발송</h4>
-	<img src="./ad-hell-client/product/gif/예약알림발송.gif" width="80%"/>
+	<img src="./product/gif/알림템플릿삭제.gif" width="80%"/>
+	<h4>알림 로그 검색</h4>
+	<img src="./product/gif/알림로그검색.png" width="80%"/>
+	<h4>알림 발송</h4>
+	<img src="./product/gif/알림발송.gif" width="80%"/>
 	<h4>알림함</h4>
-	<img src="./ad-hell-client/product/gif/알림함.gif" width="80%"/>
+	<img src="./product/gif/알림함.gif" width="80%"/>
+	<h4>스레드 답글 알림</h4>
+	<img src="./product/gif/스레드답글알림.gif" width="80%"/>
+</details>
+
+<details> 
+	<summary><b>🚨 신고</b></summary> 
+	<h4>신고처리</h4>
+	<img src= "![신고처리](https://github.com/user-attachments/assets/a5e37a2a-4edf-40ec-8608-d41fc8eee749)" width="80%"/>
+	<h4>신고처리 목록 필터링</h4>
+	<img src="![신고목록필터링](https://github.com/user-attachments/assets/f2574003-9a04-4003-a2d6-4b39e913139b)" width="80%"/>
 </details>
 
 ---
@@ -421,7 +438,7 @@ pipeline {
 
 | 팀원 이름 | 회고 내용 |
 |----------|-----------|
-| 김동리 | 프로젝트를 진행하면서 영속성 계층을 처음 설계한 형태 그대로 유지하기 어려운 상황을 겪었다. 일부 도메인의 Repository가 다른 팀원의 작업 범위에 있었고, 일정상 해당 구현을 기다리기보다는 기능 개발을 먼저 진행해야 했다. 이로 인해 Repository를 바로 활용하지 못하고, EntityManager와 DB 조회 중심의 방식으로 구현을 진행하게 되었다.당시에는 기능 흐름을 유지하는 것이 가장 중요했기 때문에, 엔티티 존재 여부나 단순 검증은 JdbcTemplate을 사용한 직접 SQL 조회로 처리했고, 연관 관계가 필요한 부분은 EntityManager의 getReference()를 사용해 식별자 기반 참조로 대체했다. 또한 신고 집계처럼 조건이 복잡하거나 성능이 중요한 조회는 Native Query를 사용해 처리했다.결과적으로 JPA를 중심으로 하되, 일부 구간은 JDBC와 Native Query로 보완한 혼합형 구조가 되었고, 이는 일정과 협업 상황을 고려한 현실적인 선택이었다. 다만 영속성 접근 방식이 여러 방식으로 나뉘면서 코드의 일관성이 떨어졌고, JPA의 영속성 컨텍스트와 직접 SQL 업데이트가 함께 사용되면서 상태 관리에 주의가 필요하다는 한계도 분명히 드러났다.이번 경험을 통해 영속성 계층 설계는 단순히 기능 구현을 넘어, 팀 협업과 일정까지 함께 고려해야 한다는 점을 느꼈다. 이후에는 Repository 의존 관계를 사전에 명확히 하고, 가능한 한 JPA 중심의 일관된 구조를 유지하되, 불가피한 경우에도 우회 방식의 범위와 책임을 명확히 하는 방향으로 개선하고자 한다 |
+| 김동리 | 프로젝트를 진행하면서 영속성 계층을 처음 설계한 형태 그대로 유지하기 어려운 상황을 겪었다. 일부 도메인의 Repository가 다른 팀원의 작업 범위에 있었고, 일정상 해당 구현을 기다리기보다는 기능 개발을 먼저 진행해야 했다. 이로 인해 Repository를 바로 활용하지 못하고, EntityManager와 DB 조회 중심의 방식으로 구현을 진행하게 되었다.엔티티 존재 여부나 단순 검증은 JdbcTemplate을 사용한 직접 SQL 조회로 처리했고, 연관 관계가 필요한 부분은 EntityManager의 getReference()를 사용해 식별자 기반 참조로 대체했다. 결과적으로 일정과 협업 상황을 고려한 현실적인 선택으로 JPA를 중심으로 하되, 일부 구간은 JDBC와 Native Query로 보완한 혼합형 구조가 되었었다. 이는 영속성 접근 방식이 여러 방식이 혼재되면서 코드 일관성과 상태 관리 측면에서 한계가 드러났다. 이번 경험을 통해 영속성 계층 설계는 단순히 기능 구현을 넘어, 팀 협업과 일정까지 함께 고려해야 한다는 점을 느꼈다. 이후에는 Repository 의존 관계를 사전에 명확히 하고, 가능한 한 JPA 중심의 일관된 구조를 유지하되, 불가피한 경우에도 우회 방식의 범위와 책임을 명확히 하는 방향으로 개선하고자 한다 |
 | 김명진 | ㅇㅇ |
 | 김현수 | 회고하며 크게 세 가지 아쉬움이 남는다.<br><br>첫째, 시간적 제약으로 인해 Ingress Load Balancer를 더 상세하게 공부하고 적용하지 못한 것이 아쉬웠다.<br><br>둘째, 학부 시절 수강한 데이터 네트워크 과목이 전부였던 탓에 컴퓨터 네트워크 전반에 대한 이해가 부족하다는 한계가 점점 더 분명해지고 있다. 실제 시스템을 설계하고 운영하는 과정에서 네트워크 지식의 부재가 장애 요인으로 작용했으며, 이를 계기로 컴퓨터 네트워크에 대한 체계적인 학습이 필요하다는 것을 느꼈다.<br><br>셋째, MSA 구축 과정에서 충분한 기여를 하지 못했다는 아쉬움이 있다. 이는 도메인 주도 개발 과정에서 DDD를 사실상 건너뛴 영향이 컸다고 생각한다. DDD를 통해 각 도메인을 명확히 정의하고, 팀원별 역할과 책임을 명확히 분리했으면 MSA 구축 뿐만 아니라 개발 속도에도 좋은 영향을 주었을 것 같다. |
 | 박연수 | 이번 DevOps 프로젝트를 통해 단순히 “배포를 해본 경험”을 넘어서 서비스 운영 관점에서 개발을 바라보는 시야를 넓힐 수 있었다고 느꼈다.<br><br>이번 프로젝트를 계기로 DevOps는 단순한 도구의 조합이 아니라 개발–배포–운영 전반을 하나의 흐름으로 설계하는 사고 방식이라는 점을 명확히 인식하게 되었다.<br><br>앞으로는 컴퓨터 네트워크와 Kubernetes 내부 동작에 대한 학습을 병행하며, 더 안정적이고 예측 가능한 시스템을 설계할 수 있는 개발자로 성장하고자 한다. |
