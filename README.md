@@ -274,6 +274,8 @@ kubectl logs -l app=cherry-booker --follow
 
 - **CI (Jenkins)**  
   소스 코드 빌드, 테스트, Docker 이미지 빌드 및 Docker Hub 푸시
+
+<img src="./product/gif/argo.png" width="80%"/>
 - **CD (Argo CD)**  
   GitOps 방식으로 Kubernetes 배포 자동화
 
