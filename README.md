@@ -63,6 +63,72 @@ OCR 기술을 통해 텍스트가 자동으로 추출·저장되며,
 - 타 사용자는 **본인이 추출한 글귀로만 답변 가능**
 - 글귀 중심의 독서 커뮤니티 제공
 
+### 🔔 알림
+- 전반적인 알림 기능
+- 스레드에 답글 달리면 알림 전송 후, 알림 클릭 시 해당 스레드로 바로 이동
+---
+
+<!-- SECTION: 테스트 결과 --> <h1 id="test">🧪 6. 기능 테스트 결과</h1>
+
+아래는 실제 서비스 기능을 검증한 시연 영상입니다.
+
+<details> 
+	<summary><b>🔐 로그인 / 인증</b></summary> 
+	<h4>로그인(회원)</h4>
+	<img src="./ad-hell-client/product/gif/userLogin.gif" width="80%"/> 
+	<br>
+	<h4>아이디 찾기</h4>
+	<img src="./ad-hell-client/product/gif/FindId.gif" width="80%"/> 
+
+</details> 
+<details> 
+	<summary><b>📚 개인 서재 관리</b></summary> 
+</details> 
+
+<details> 
+	<summary><b>📸 OCR 기반 구절 추출</b></summary> 
+	<br>
+</details> 
+<details> 
+	<summary><b>📝 글귀 아카이브 & 메모</b></summary> 
+	<br>
+</details> 
+
+<details> 
+    <summary><b>💬 글귀 스레드</b></summary>
+    
+</details>
+
+<details> 
+	<summary><b>🔔 알림</b></summary> 
+	<h4>알림 템플릿 목록 조회</h4>
+	<img src="./ad-hell-client/product/gif/알림발송목록조회.png" width="80%"/>
+	<h4>알림 템플릿 검색</h4>
+	<img src="./ad-hell-client/product/gif/알림템플릿검색.gif" width="80%"/>
+	<h4>알림 템플릿 등록</h4>
+	<img src="./ad-hell-client/product/gif/알림템플릿등록.gif" width="80%"/>
+	<h4>알림 템플릿 수정</h4>
+	<img src="./ad-hell-client/product/gif/알림템플릿수정.gif" width="80%"/>
+	<h4>알림 템플릿 삭제</h4>
+	<img src="./ad-hell-client/product/gif/알림템플릿삭제.gif" width="80%"/>
+	<h4>알림 발송 목록 조회</h4>
+	<img src="./ad-hell-client/product/gif/알림발송목록조회.png" width="80%"/>
+	<h4>발송 알림 검색</h4>
+	<img src="./ad-hell-client/product/gif/발송알림검색.gif" width="80%"/>
+	<h4>즉시 알림 발송</h4>
+	<img src="./ad-hell-client/product/gif/즉시알림발송.gif" width="80%"/>
+	<h4>푸시 알림 발송</h4>
+	<img src="./ad-hell-client/product/gif/푸시알림발송.gif" width="80%"/>
+	<h4>이벤트 알림 발송</h4>
+	<img src="./ad-hell-client/product/gif/이벤트알림발송.gif" width="80%"/>
+	<h4>예약 알림 발송</h4>
+	<img src="./ad-hell-client/product/gif/예약알림발송.gif" width="80%"/>
+	<h4>알림함</h4>
+	<img src="./ad-hell-client/product/gif/알림함.gif" width="80%"/>
+</details>
+
+---
+
 ---
 
 ## 🛠 기술 스택
