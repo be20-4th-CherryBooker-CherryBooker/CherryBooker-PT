@@ -90,7 +90,10 @@ OCR 기술을 통해 텍스트가 자동으로 추출·저장되며,
 
 <details> 
 	<summary><b>📸 OCR 기반 구절 추출</b></summary> 
-	<br>
+	<h4>글귀 등록</h4>
+	<img src="./product/gif/글귀등록.gif" width="80%"/>
+	<h4>글귀 수정/삭제</h4>
+	<img src="./product/gif/글귀수정삭제.gif" width="80%"/>
 </details> 
 <details> 
 	<summary><b>📝 글귀 아카이브 & 메모</b></summary> 
@@ -141,10 +144,12 @@ OCR 기술을 통해 텍스트가 자동으로 추출·저장되며,
 
 <details> 
 	<summary><b>🚨 신고</b></summary> 
-	<h4>신고처리</h4>
-	<img src= "![신고처리](https://github.com/user-attachments/assets/a5e37a2a-4edf-40ec-8608-d41fc8eee749)" width="80%"/>
-	<h4>신고처리 목록 필터링</h4>
-	![Image](https://github.com/user-attachments/assets/66647316-24f1-4bfb-b506-68b3885b680c)
+	<h4>신고 목록 조회</h4>
+	<img src="./product/gif/신고필터.gif" width="80%"/>
+	<h4>신고 처리</h4>
+	<img src="./product/gif/신고처리.gif" width="80%"/>
+	<h4>게시물 신고 접수</h4>
+	<img src="./product/gif/게시물신고접수.gif" width="80%"/>
 
 </details>
 
